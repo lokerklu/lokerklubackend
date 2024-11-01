@@ -11,7 +11,7 @@ mongoose.connect(database, {
 })
 
 const db = mongoose.connection;
-db.on("error", () => console.log("database tidak connect contol"))
+db.on("error", () => console.log("database tidak connect"))
 db.once("open", () => console.log("database connect"))
 
 export default mongoose
